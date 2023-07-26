@@ -3,7 +3,7 @@ import { readAll } from "../lib/markdoc/read";
 import { blog } from "../lib/markdoc/frontmatter.schema";
 import PageLayout from "../layouts/PageLayout.astro";
 import PageMeta from "../components/PageMeta.astro";
-import { SITE_TITLE } from "../config";
+import { SITE_TITLE, DATETIME_LOCALE } from "../config";
 
 const posts = await readAll({
   directory: "blog",
@@ -27,7 +27,7 @@ const sortedPosts = posts
         sortedPosts.map((post) => {
           const formattedDate = new Date(
             post.frontmatter.date
-          ).toLocaleDateString("en-us", {
+          ).toLocaleDateString(DATETIME_LOCALE, {
             year: "numeric",
             month: "short",
             day: "numeric",
