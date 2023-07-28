@@ -11,11 +11,7 @@ _Redkacja przypomina: FAANG = Facebook Amazon Apple Netflix Google_
 
 Co jakiś czas na moim LinkedIn feed wyskakuje wpis typu
 
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7027191535435698176" height="287" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-
 albo
-
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7042489841191698432" height="623" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 
 Ahh, ten pasywno agresywny ton… 😂
 
@@ -34,7 +30,7 @@ Oczywiście nie znaczy to, że jesteś geniuszem. Ale z dużym prawdopodobieńst
 
 ## “Zadanie rekrutacyjne?! Czy wspominałem, że pracowałem w FAANG?”
 
-Nie ukrywam, liczyłbym na zdecydowanie krótszy proces w części technicznej. Nie wspominając, że jakby ktoś mnie zgrillował o aktualnie popularne narzędzia to pewnie bym poległ 🥲.
+Nie ukrywam, liczyłbym na zdecydowanie krótszy proces w części technicznej. Nie wspominając, że jakby ktoś mnie zgrillował z aktualnie popularne narzędzi to pewnie bym poległ 🥲.
 
 Firmy “Big tech” zazwyczaj mają wewnętrzne narzędzia, frameworki, etc. W Google nie ma czegoś takiego jak npm, nie używa się GitHuba (ani nawet gita!), poza nielicznymi wyjątkami wszystko jest na wewnętrzny użytek.
 
