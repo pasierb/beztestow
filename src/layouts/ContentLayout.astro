@@ -13,6 +13,8 @@ import ThemeScript from "./ThemeScript.astro";
 import Favicon from "./Favicon.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import { DATETIME_LOCALE } from "../config";
+
 
 export interface Props {
   title: string;
@@ -20,7 +22,7 @@ export interface Props {
 }
 
 const { title, date } = Astro.props;
-const formattedDate = new Date(date).toLocaleDateString("en-us", {
+const formattedDate = new Date(date).toLocaleDateString(DATETIME_LOCALE, {
   year: "numeric",
   month: "short",
   day: "numeric",
@@ -50,6 +52,14 @@ const formattedDate = new Date(date).toLocaleDateString("en-us", {
         <h1 class="m-0 mb-[0.25em]">{title}</h1>
         <time class="block mb-[2em] text-text-muted">{formattedDate}</time>
         <slot name="content" />
+        <script is:inline src="https://utteranc.es/client.js"
+          repo="pasierb/beztestow"
+          issue-term="pathname"
+          label="comments"
+          theme="preferred-color-scheme"
+          crossorigin="anonymous"
+          async>
+        </script>
       </section>
     </main>
     <Footer />

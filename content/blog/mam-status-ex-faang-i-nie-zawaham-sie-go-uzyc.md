@@ -11,7 +11,11 @@ _Redkacja przypomina: FAANG = Facebook Amazon Apple Netflix Google_
 
 Co jakiś czas na moim LinkedIn feed wyskakuje wpis typu
 
+![](/images/ex-faang-linkedin-1.png)
+
 albo
+
+![](/images/ex-faang-linkedin-2.png)
 
 Ahh, ten pasywno agresywny ton… 😂
 
