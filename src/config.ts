@@ -4,7 +4,7 @@
 export const SITE_TITLE = '!Bez testów';
 export const SITE_DESCRIPTION =
   'Jak deploy to tylko w piątek. Jak testy to tylko na produkcji.';
-export const TWITTER_HANDLE = '@yourtwitterhandle';
+export const TWITTER_HANDLE = '@BezTestow';
 export const MY_NAME = '!Bez testów';
 
 // setup in astro.config.mjs
