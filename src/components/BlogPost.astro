@@ -9,6 +9,7 @@ export interface Props {
 const { post } = Astro.props;
 const formattedDate = formatDate(post.data.date);
 const { Content } = await post.render();
+const commentsIssueTerm = `blog/${post.slug}`;
 ---
 
 <article class="blog-post prose max-w-none prose-sleek">
@@ -19,7 +20,7 @@ const { Content } = await post.render();
     is:inline
     src="https://utteranc.es/client.js"
     repo="pasierb/beztestow"
-    issue-term="pathname"
+    issue-term={commentsIssueTerm}
     label="comments"
     theme="preferred-color-scheme"
     crossorigin="anonymous"
