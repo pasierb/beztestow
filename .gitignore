@@ -1,5 +1,7 @@
 # build output
 dist/
+.astro/
+*.generated.d.ts
 
 # dependencies
 node_modules/
