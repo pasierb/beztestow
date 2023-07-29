@@ -1,8 +1,5 @@
 ---
 import { getCollection, getEntry } from "astro:content";
-import { readOne, readAll } from "../../lib/markdoc/read";
-import { blog } from "../../lib/markdoc/frontmatter.schema";
-import Renderer from "../../components/Renderer.astro";
 import BlogPostMeta from "../../components/BlogPostMeta.astro";
 import ContentLayout from "../../layouts/ContentLayout.astro";
 import { SITE_URL } from "../../config";
@@ -22,7 +19,7 @@ if (typeof slug !== "string") {
 
 const entry = await getEntry("blog", slug);
 if (!entry) {
-  throw new Error('');
+  throw new Error(`No entry found for slug: ${slug}`);
 }
 const { Content } = await entry.render();
 ---
