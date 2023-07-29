@@ -12,8 +12,11 @@ import { TWITTER_PROFILE_URL } from "../config";
     Skip to content
   </a>
   <nav>
-    <section class="text-text-bold">
-      <ul class="unset flex gap-4 [&>li]:p-0">
+
+    <section class="text-text-bold flex">
+      <a class="brand rounded-full mr-4" href="/"></a>
+
+      <ul class="unset flex items-center gap-4 [&>li]:p-0">
         <li><HeaderLink href="/">Główna</HeaderLink></li>
         <li><HeaderLink href="/blog">Blog</HeaderLink></li>
         <li><HeaderLink href="/co-to">Co to?</HeaderLink></li>
@@ -46,5 +49,13 @@ import { TWITTER_PROFILE_URL } from "../config";
         0,
         max-content
       );
+  }
+
+  header .brand {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url('/images/beztestow-avatar-200x200.png');
+    background-size: cover;
   }
 </style>
