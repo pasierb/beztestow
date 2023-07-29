@@ -1,29 +1,11 @@
 ---
-import { getCollection } from "astro:content";
 import PageLayout from "../layouts/PageLayout.astro";
 import PageMeta from "../components/PageMeta.astro";
-import { SITE_TITLE, DATETIME_LOCALE } from "../config";
+import { SITE_TITLE } from "../config";
 import { formatDate } from "../lib/formatter";
+import { publishedPosts } from "../lib/blog";
 
-const posts = await getCollection("blog");
-
-/*
-
-const sortedPosts = posts
-  .filter((p) => p.frontmatter.draft !== true)
-  .sort(
-    (a, b) =>
-      new Date(b.frontmatter.date).valueOf() -
-      new Date(a.frontmatter.date).valueOf()
-  );
-  const formattedDate = new Date(
-            post.frontmatter.date
-          ).toLocaleDateString(DATETIME_LOCALE, {
-            year: "numeric",
-            month: "short",
-            day: "numeric",
-          });
-  */
+const posts = await publishedPosts;
 ---
 
 <PageLayout>
