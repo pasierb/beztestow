@@ -1,6 +1,7 @@
 ---
 import { getEntry } from "astro:content";
 import BlogPostMeta from "../../components/BlogPostMeta.astro";
+import BlogPost from "../../components/BlogPost.astro";
 import ContentLayout from "../../layouts/ContentLayout.astro";
 import { publishedPosts } from "../../lib/blog";
 
@@ -20,7 +21,6 @@ const entry = await getEntry("blog", slug);
 if (!entry) {
   throw new Error(`No entry found for slug: ${slug}`);
 }
-const { Content } = await entry.render();
 ---
 
 <ContentLayout title={entry.data.title} date={entry.data.date}>
@@ -31,5 +31,5 @@ const { Content } = await entry.render();
     slot="meta"
   />
 
-  <Content slot="content" />
+  <BlogPost post={entry} slot="content" />
 </ContentLayout>
