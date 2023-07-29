@@ -1,0 +1,28 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { formatDate } from "../lib/formatter";
+
+export interface Props {
+  post: CollectionEntry<"blog">;
+}
+
+const { post } = Astro.props;
+const formattedDate = formatDate(post.data.date);
+const { Content } = await post.render();
+---
+
+<article class="blog-post prose max-w-none prose-sleek">
+  <h1 class="m-0 mb-[0.25em]">{post.data.title}</h1>
+  <time class="block mb-[2em] text-text-muted">{formattedDate}</time>
+  <Content />
+  <script
+    is:inline
+    src="https://utteranc.es/client.js"
+    repo="pasierb/beztestow"
+    issue-term="pathname"
+    label="comments"
+    theme="preferred-color-scheme"
+    crossorigin="anonymous"
+    async
+  ></script>
+</article>

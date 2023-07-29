@@ -13,16 +13,6 @@ import ThemeScript from "./ThemeScript.astro";
 import Favicon from "./Favicon.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { formatDate } from "../lib/formatter";
-
-
-export interface Props {
-  title: string;
-  date: Date;
-}
-
-const { title, date } = Astro.props;
-const formattedDate = formatDate(date);
 ---
 
 <!DOCTYPE html>
@@ -44,19 +34,7 @@ const formattedDate = formatDate(date);
   >
     <Header />
     <main id="main">
-      <section class="blog-post prose max-w-none prose-sleek">
-        <h1 class="m-0 mb-[0.25em]">{title}</h1>
-        <time class="block mb-[2em] text-text-muted">{formattedDate}</time>
-        <slot name="content" />
-        <script is:inline src="https://utteranc.es/client.js"
-          repo="pasierb/beztestow"
-          issue-term="pathname"
-          label="comments"
-          theme="preferred-color-scheme"
-          crossorigin="anonymous"
-          async>
-        </script>
-      </section>
+      <slot name="content" />
     </main>
     <Footer />
     <style>
