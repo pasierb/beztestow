@@ -1,0 +1,37 @@
+---
+import PageMeta from "../components/PageMeta.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+import { SITE_TITLE } from "../config";
+---
+
+<PageLayout>
+  <PageMeta title={`${SITE_TITLE} | O autorze`} slot="meta" />
+  <Fragment slot="main">
+    <article class="prose max-w-none prose-sleek">
+      <h1 class="m-0 mb-4">O !Bez testów</h1>
+
+      <p>!Bez testów to blog o branży IT, karierze, technologii. Bez owijania.</p>
+
+      <h2 class="m-0 mb-[0.25em]">O szacownym autorze</h2>
+
+      <div class="flex justify-center my-8">
+        <iframe src="https://giphy.com/embed/niC0LL8nmXnWp0d7Sn" width="480" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      </div>
+
+      <p>
+        Mam na imię Michał. Zajmuję się programowaniem od ponad 10 lat, głównie wokół webowych technologii.
+      </p>
+      <p>
+        Pracowałem w małych i dużych software housach, w startup-ach, w małych firmach produktowych, dużych firmach produktowych.
+        Próbowałem swoich sił solo, a od paru lat odnajduję się w korporacyjnym Big-tech'u - wcześniej <i class="fa-brands fa-aws" title="AWS"></i> w Berlinie, obecnie <i class="fa-brands fa-google" title="Google"></i> w Zurychu.
+      </p>
+      <p>
+        W 2022 opowiedziałem trochę o sobie w ramach cyklu "Polscy programiści na świecie" dla justjoin.it.
+      </p>
+
+      <div class="flex justify-center my-8">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9PPn1qGJFqM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </article>
+  </Fragment>
+</PageLayout>
