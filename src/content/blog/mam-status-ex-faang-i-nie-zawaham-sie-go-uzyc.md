@@ -7,7 +7,7 @@ title: Mam status ex-FAANG i nie zawaham się go użyć!
 
 Autor: “ex-Amazon” Michał
 
-_Redkacja przypomina: FAANG = Facebook Amazon Apple Netflix Google_
+_Redakcja przypomina: FAANG = Facebook Amazon Apple Netflix Google_
 
 Co jakiś czas na moim LinkedIn feed wyskakuje wpis typu
 
