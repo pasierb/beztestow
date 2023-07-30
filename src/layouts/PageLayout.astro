@@ -11,14 +11,13 @@ import "../styles/global.css";
 
 import GoogleFont from "./GoogleFont.astro";
 import FontAwesome from "./FontAwesome.astro";
-import ThemeScript from "./ThemeScript.astro";
 import Favicon from "./Favicon.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 ---
 
 <!DOCTYPE html>
-<html class="theme-sleek" lang="en">
+<html class="theme-sleek dark" lang="en">
   <head>
     <!-- Global Metadata -->
     <meta charset="utf-8" />
@@ -27,7 +26,6 @@ import Footer from "../components/Footer.astro";
     <Favicon />
     <slot name="meta" />
     <GoogleFont />
-    <ThemeScript />
     <FontAwesome />
   </head>
 
