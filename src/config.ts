@@ -12,5 +12,5 @@ export const SITE_URL = BASE_URL.origin;
 export const DATETIME_LOCALE = 'pl-pl';
 
 // Socials
-export const TWITTER_HANDLE = '@BezTestow';
+export const TWITTER_HANDLE = '@mpasierbski';
 export const TWITTER_PROFILE_URL = `https://twitter.com/${TWITTER_HANDLE.replace('@', '')}`;
